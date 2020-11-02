@@ -6,6 +6,7 @@ class Home extends BaseController
 {
 	public function index()
 	{
+		// luodaan malli
 		$model = new HomeModel();
 		$data['title'] = 'Messages';
 		$data['messages'] = $model->getMessages();
